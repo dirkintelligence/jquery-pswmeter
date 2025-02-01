@@ -1,0 +1,54 @@
+.pswmeter {
+    position: relative;
+    display: block;
+}
+.pswmeter .pswmeter-score {
+    height: 4px;
+    width: 0%;
+    background: transparent;
+    transition: width .3s ease-in-out, background .3s ease-in-out;
+}
+.pswmeter .pswmeter-score.psms-20  { width: 20%;  background: red; }
+.pswmeter .pswmeter-score.psms-40  { width: 40%;  background: orangered; }
+.pswmeter .pswmeter-score.psms-60  { width: 60%;  background: orange; }
+.pswmeter .pswmeter-score.psms-80  { width: 80%;  background: limegreen; }
+.pswmeter .pswmeter-score.psms-100 { width: 100%; background: mediumseagreen; }
+.pswmeter .pswmeter-layer {
+    position: absolute;
+    left: 0;
+    top: 100%; /* Fallback */
+    top: calc(100% + 4px);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 4000;
+    display: none;
+    width: 100%;
+}
+.pswmeter .criteria-item {
+    position:relative;
+    margin: 5px 0;
+}
+.pswmeter .criteria-text,
+.pswmeter .criteria-text * {
+    color:#222;
+    padding-left:20px;
+}
+.pswmeter .criteria-separator,
+.pswmeter .criteria-separator * {
+    color:#777;
+    padding:6px 0;
+}
+.pswmeter .criteria-icon {
+    position:absolute;
+    left:0; top:0px;
+    font-size:120%;
+}
+.pswmeter .criteria-icon.valid {
+    color: green !important;
+}
+.pswmeter .criteria-icon.invalid {
+    color: red !important;
+}
