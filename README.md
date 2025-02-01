@@ -1,4 +1,4 @@
-# passwordmeter.js
+# jquery-pswmeter.js
 
 You want to give feedback to a website visitor while they are typing in a new password? passwordmeter shows which criteria are met and checks whether there are enough criteria for a (reasonably) secure password. It is a compromise solution between security and simplicity.
 
@@ -13,11 +13,11 @@ The password length (configurable) must be met, as well as x of 4 other criteria
 
 In the HTML header:
 
-	<link href=.../passwordmeter.css" rel="stylesheet">
+	<link href=.../jquery-pswmeter.min.css" rel="stylesheet">
 
 At the end of the HTML code:
 
-	<script src=“.../passwordmeter.min.js”></script>
+	<script src=“.../jquery-pswmeter.min.min.js”></script>
 
 ### HTML
 
@@ -85,8 +85,8 @@ After submitting, you can also check the requirements with a backend scripting l
             
 ## Double Check with PHP
 
-...
+see php folder
 
 ## Double Check with Python
 
-...
+see phyton folder
